@@ -5,7 +5,7 @@ cask "cctimer" do
   url "https://github.com/TidyBearLabs/cctimer/releases/download/v#{version}/cctimer-darwin-arm64-#{version}.zip",
       verified: "github.com/TidyBearLabs/cctimer/"
   name "cctimer"
-  desc "Claude Code rate limit countdown for the macOS menu bar"
+  desc "Claude Code rate limit countdown"
   homepage "https://github.com/TidyBearLabs/cctimer"
 
   livecheck do
@@ -13,11 +13,10 @@ cask "cctimer" do
     strategy :github_latest
   end
 
+  depends_on :macos
   depends_on arch: :arm64
 
   app "cctimer.app"
 
-  zap trash: [
-    "~/Library/Application Support/cctimer",
-  ]
+  zap trash: "~/Library/Application Support/cctimer"
 end
