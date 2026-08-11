@@ -1,6 +1,6 @@
 cask "cctimer" do
-  version "0.1.10"
-  sha256 "08b05bf2c693225ecb1f4116e10c7b8fba15ca71ff64fe8abde47ceeb2bf78ce"
+  version "0.1.11"
+  sha256 "40b2113be0ed5f8cbe8e067a9e27b4dff478fc30e3ba1e2bc20da08b9fbb6edf"
 
   url "https://github.com/TidyBearLabs/cctimer/releases/download/v#{version}/cctimer-darwin-arm64-#{version}.zip",
       verified: "github.com/TidyBearLabs/cctimer/"
